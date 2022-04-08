@@ -1,17 +1,7 @@
 /* ************************************************************************** */
-/** Descriptive File Name
-
-  @Company
-    Company Name
-
-  @File Name
-    filename.c
-
-  @Summary
-    Brief description of the file.
-
+/**
   @Description
-    Describe the purpose of this file.
+ *      Código que realiza el parpadeo de los leds.
  */
 
 
@@ -67,14 +57,10 @@ char exampleArray[ARRAY_SIZE];
 
 int main(void) {
     while (1) {
-        LEDA_SetDigitalOutput();
-        LEDA_SetHigh();
+        LEDA_Toggle()
         UT_delay();
-        LEDA_SetLow();
-        LEDB_SetDigitalOutput();
-        LEDB_SetHigh();
+        LEDB_Toggle()
         UT_delay();
-        LEDB_SetLow();
     }
     return 0;
 };

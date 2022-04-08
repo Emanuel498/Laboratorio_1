@@ -1,10 +1,9 @@
-#ifndef _EXAMPLE_FILE_NAME_H   /* Guard against multiple inclusion */
-#define _EXAMPLE_FILE_NAME_H
+#ifndef _UTILS_ESPERA
+#define _UTILS_ESPERA
 
 #define UT_DELAY_CYCLES 500000
 
-int ExampleFunction(int param1, int param2);
-
+// Delay encargado de separar el cambio de luz de cada led, entre el prendido y apagado.
 void UT_delay(void);
 
 #endif
