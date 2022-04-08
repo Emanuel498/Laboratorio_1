@@ -56,11 +56,12 @@ int exampleData;
 char exampleArray[ARRAY_SIZE];
 
 int main(void) {
+    LEDA_SetDigitalOutput();
+    LEDB_SetDigitalOutput();
     while (1) {
-        LEDA_Toggle()
+        LEDA_Toggle();
         UT_delay();
-        LEDB_Toggle()
-        UT_delay();
+        LEDB_Toggle();
     }
     return 0;
 };
